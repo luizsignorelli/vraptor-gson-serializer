@@ -17,12 +17,10 @@ h2. CONFIGURATION
 2.. Add this to your web.xml:
 <pre>
 <code>
-       <context-param>
-	    <param-name>br.com.caelum.vraptor.packages</param-name>
-	    <param-value>
-	        br.com.caelum.vraptor.serialization.gson
-	    </param-value>
-	</context-param>
+<context-param>
+   <param-name>br.com.caelum.vraptor.packages</param-name>
+   <param-value> br.com.caelum.vraptor.serialization.gson</param-value>
+</context-param>
 </code>
 </pre>
 
