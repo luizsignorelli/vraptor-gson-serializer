@@ -4,7 +4,7 @@
 	<groupId>br.com.caelum.vraptor</groupId>
 	<artifactId>gson-serializer</artifactId>
 	<packaging>jar</packaging>
-	<version>0.0.1</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>vraptor-gson-serializer</name>
 
 	<properties>
