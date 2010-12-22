@@ -1,7 +1,9 @@
 h2. ABOUT
+
 VRaptor uses Xstream to serialize JSON from controllers, we don't like Xstream.
 
 h2. INSTALATION
+
 <pre>
 <code>git clone git://github.com/luizsignorelli/vraptor-gson-serializer.git
 cd vraptor-gson-serializer 
@@ -10,6 +12,7 @@ mvn install</code>
 
 
 h2. CONFIGURATION
+
 1. Add the dependency to your project
 2.. Add this to your web.xml:
 <pre>
