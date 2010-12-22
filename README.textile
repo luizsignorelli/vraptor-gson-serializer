@@ -14,7 +14,8 @@ mvn install</code>
 h2. CONFIGURATION
 
 1. Add the dependency to your project
-2.. Add this to your web.xml:
+2. Add this to your web.xml:
+
 <pre>
 <code>
 <context-param>
