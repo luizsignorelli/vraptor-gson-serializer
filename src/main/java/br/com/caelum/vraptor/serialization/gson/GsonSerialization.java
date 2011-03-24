@@ -83,6 +83,11 @@ public class GsonSerialization implements JSONSerialization {
         return this;
     }
 
+    @Override
+    public JSONSerialization indented() {
+        return this;
+    }
+
     private <T> Serializer serializeWithGsonAPI(final T object) {
         return new NestedSerializer<T>(object);
 
