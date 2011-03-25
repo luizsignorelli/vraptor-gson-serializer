@@ -13,10 +13,10 @@ VRaptor uses Xstream to serialize JSON from controllers, we don't like Xstream.
 1. Add the dependency to your project
 2. Add this to your web.xml:
 
-    <context-param>
-       <param-name>br.com.caelum.vraptor.packages</param-name>
-       <param-value> br.com.caelum.vraptor.serialization.gson</param-value>
-    </context-param>
+        <context-param>
+            <param-name>br.com.caelum.vraptor.packages</param-name>
+            <param-value> br.com.caelum.vraptor.serialization.gson</param-value>
+        </context-param>
 
 ## CHANGES
 
