@@ -33,7 +33,7 @@ We've added a JsonInterceptor and a @Json annotation, so now you can do this:
             this.customers = customers;
         }
 
-        *@Json* @Get("/customer/byName")
+        **@Json** @Get("/customer/byName")
         public List<Customer> findByName(String name){
             return Arrays.asList(customers.findByName(name));
         }
@@ -41,7 +41,7 @@ We've added a JsonInterceptor and a @Json annotation, so now you can do this:
 
 The annotation marks the method to be intercepted, and it will just use the result.use(json()) to serialize the return of the method.
 
-You can exclude som fields too:
+You can exclude some fields too:
 
     @Resource
     public class CustomerController {
@@ -52,7 +52,7 @@ You can exclude som fields too:
             this.customers = customers;
         }
 
-        *@Json(exclude = {"address, age"})* @Get("/customer/byName")
+        **@Json(exclude = {"address, age"})** @Get("/customer/byName")
         public List<Customer> findByName(String name){
             return Arrays.asList(customers.findByName(name));
         }
