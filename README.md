@@ -13,10 +13,12 @@ VRaptor uses Xstream to serialize JSON from controllers, we don't like Xstream.
 1. Add the dependency to your project
 2. Add this to your web.xml:
 
+```xml
         <context-param>
             <param-name>br.com.caelum.vraptor.packages</param-name>
             <param-value> br.com.caelum.vraptor.serialization.gson</param-value>
         </context-param>
+```
 
 ## CHANGES
 
@@ -45,6 +47,7 @@ The annotation marks the method to be intercepted, and it will just use the resu
 
 You can exclude some fields too:
 
+```java
     @Resource
     public class CustomerController {
 
@@ -59,6 +62,7 @@ You can exclude some fields too:
             return Arrays.asList(customers.findByName(name));
         }
     }
+```
 
 ### 0.0.2
 
