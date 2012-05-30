@@ -24,6 +24,7 @@ VRaptor uses Xstream to serialize JSON from controllers, we don't like Xstream.
 
 We've added a JsonInterceptor and a @Json annotation, so now you can do this:
 
+```java
     @Resource
     public class CustomerController {
 
@@ -38,6 +39,7 @@ We've added a JsonInterceptor and a @Json annotation, so now you can do this:
             return Arrays.asList(customers.findByName(name));
         }
     }
+```
 
 The annotation marks the method to be intercepted, and it will just use the result.use(json()) to serialize the return of the method.
 
